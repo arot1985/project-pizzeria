@@ -172,10 +172,19 @@
           } else if (!isOptionSelected && option.default) {
             price -= option.price;
           }
+
+          const image = thisProduct.imageWrapper.querySelector('.' + paramId + '-' + optionId);
+
+          if (isOptionSelected && image) {
+            image.classList.add(classNames.menuProduct.imageVisible);
+          } else if(!isOptionSelected && image) {
+            image.classList.remove(classNames.menuProduct.imageVisible);
+          }
         }
 
         // update calculated price in the HTML
         thisProduct.priceElem.innerHTML = price;
+        
       }
     }
   }
