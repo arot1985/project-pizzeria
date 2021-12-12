@@ -194,12 +194,10 @@
             image.classList.remove(classNames.menuProduct.imageVisible);
           }
         }
-
-        // update calculated price in the HTML
-        price *= thisProduct.amountWidget.value;
-        thisProduct.priceElem.innerHTML = price;
-        
       }
+      // update calculated price in the HTML
+      price *= thisProduct.amountWidget.value;
+      thisProduct.priceElem.innerHTML = price;
     }
   }
 
