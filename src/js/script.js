@@ -459,7 +459,7 @@
         totalNumber: thisCart.dom.totalNumber.innerHTML,
         deliveryFee: thisCart.dom.deliveryFee.innerHTML,
         products: [],
-      }
+      };
 
       for(let prod of thisCart.products) {
         payload.products.push(prod.getData());
@@ -557,7 +557,7 @@
         priceSingle: thisCartProduct.priceSingle,
         name:  thisCartProduct.name,
         params:   thisCartProduct.params,
-      }
+      };
       return prepareOrder;
     } 
   }
