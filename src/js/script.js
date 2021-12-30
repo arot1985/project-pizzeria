@@ -251,7 +251,7 @@
         name: thisProduct.data.name,
         amount: thisProduct.amountWidget.value,
         priceSingle: thisProduct.priceSingle,
-        price: thisProduct.priceSingle * thisProduct.amountWidget.value,
+        price: thisProduct.priceSingle,
         params: thisProduct.prepareCartProductParams(),
       };
       return productSummary;
