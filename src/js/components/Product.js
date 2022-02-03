@@ -102,6 +102,8 @@ class Product {
 
   processOrder() {
     const thisProduct = this;
+    
+    thisProduct.amount = thisProduct.amountWidget.value;
 
     const formData = utils.serializeFormToObject(thisProduct.form);
 
